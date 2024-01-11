@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UPS Wage Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    
+    <div class="wage-input">
+        <label for="hourlyWage">Hourly Wage:</label>
+        <input type="text" id="hourlyWage" name="hourlyWage">
+    </div>
+    
+    <div class="input-group">
+        <label for="sunday">Hours Worked On Sunday:</label>
+        <input type="text" id="sunday" name="sunday">
+    </div>
+    
+    <div class="input-group">
+        <label for="monday">Hours Worked On Monday:</label>
+        <input type="text" id="monday" name="monday">
+    </div>
+    
+    <div class="input-group">
+        <label for="tuesday">Hours Worked On Tuesday:</label>
+        <input type="text" id="tuesday" name="tuesday">
+    </div>
+    
+    <div class="input-group">
+        <label for="wednesday">Hours Worked On Wednesday:</label>
+        <input type="text" id="wednesday" name="wednesday">
+    </div>
+    
+    <div class="input-group">
+        <label for="thursday">Hours Worked On Thursday:</label>
+        <input type="text" id="thursday" name="thursday">
+    </div>
+    
+    <div class="input-group">
+        <label for="friday">Hours Worked On Friday:</label>
+        <input type="text" id="friday" name="friday">
+    </div>
+    
+    <div class="input-group">
+        <label for="saturday">Hours Worked On Saturday:</label>
+        <input type="text" id="saturday" name="saturday">
+    </div>
+    
+    <div class="input-group">
+        <label for="formatToggle">Use 100-minute format:</label>
+        <input type="checkbox" id="formatToggle" name="formatToggle">
+    </div>
+    
+    <button type="button">Calculate</button>
+
+    <div id="calculationResults">
+        <h2>Calculation Results:</h2>
+        <p>Total Hours: <span id="totalHours"></span></p>
+        <p>Total Wage: <span id="totalWage"></span></p>
+    </div>
+    
+    <div id="customAlert">
+        <div>
+            <span id="customAlertText"></span>
+            <br>
+            <button onclick="document.getElementById('customAlert').style.display='none'">OK</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Created by Leandro Paulino, No Association With United Parcel Service, The Colors Used On This Website Are Copyrighted by United Parcel Service</p>
+    </footer>
+</body>
+</html>

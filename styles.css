@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #351c15;
+    color: #ffc423;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #ffc423;
+    color: #351c15;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #e8b020;
+}
+
+label, input {
+    display: block;
+    margin: 10px 0;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    margin-right: 10px;
+    width: 220px;
+    white-space: nowrap;
+}
+
+.wage-input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ffc423;
+}
+
+.wage-input label {
+    margin-right: 10px;
+    width: 220px;
+    white-space: nowrap;
+}
+
+#calculationResult {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
