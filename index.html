@@ -11,7 +11,13 @@
 </head>
 <body>
     <script src="script.js"></script>
-    
+    <div id="customAlert">
+        <div>
+            <span id="customAlertText"></span>
+            <br>
+            <button onclick="document.getElementById('customAlert').style.display='none'">OK</button>
+        </div>
+    </div>
     <div class="wage-input">
         <label for="hourlyWage">Hourly Wage:</label>
         <input type="text" id="hourlyWage" name="hourlyWage">
@@ -63,16 +69,7 @@
         <h2>Calculation Results:</h2>
         <p>Total Hours: <span id="totalHours"></span></p>
         <p>Total Wage: <span id="totalWage"></span></p>
-    </div>
-    
-    <div id="customAlert">
-        <div>
-            <span id="customAlertText"></span>
-            <br>
-            <button onclick="document.getElementById('customAlert').style.display='none'">OK</button>
-        </div>
-    </div>
-    
+    </div>   
     <footer>
         <p>Created by Leandro Paulino, No Association With United Parcel Service, The Colors Used On This Website Are Copyrighted by United Parcel Service</p>
     </footer>
