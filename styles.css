@@ -75,7 +75,7 @@ input {
     justify-content: space-between;
     margin-bottom: 40px;
 }
-/* Media Queries */
+/* Media Query for Mobile Devices */
 @media only screen and (max-width: 600px) {
     body {
         padding: 20px;
