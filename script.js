@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelector('button').addEventListener('click', function() {
+    document.querySelector('#calculate').addEventListener('click', function() {
         const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
         let totalHours = 0;
         let totalMinutes = 0;

@@ -3,8 +3,6 @@
 <head>
     <title>UPS Wage Calculator</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="icon" href="images/ups.ico" type="image/x-icon">
-    <script src="script.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="UPS Wage Calculator">
     <meta property="og:description" content="Calculate your UPS wages with ease. Created By Leandro Paulino">
@@ -12,13 +10,6 @@
     <meta property="og:url" content="https://leopoldprime.github.io/UPS-Wage-Calculator/">
 </head>
 <body>
-    <div id="customAlert">
-        <div>
-            <span id="customAlertText"></span>
-            <br>
-            <button onclick="document.getElementById('customAlert').style.display='none'">OK</button>
-        </div>
-    </div>
     <div class="wage-input">
         <label for="hourlyWage">Hourly Wage:</label>
         <input type="text" id="hourlyWage" name="hourlyWage">
@@ -63,16 +54,22 @@
         <label for="formatToggle">Use 100-minute format:</label>
         <input type="checkbox" id="formatToggle" name="formatToggle">
     </div>
-    
-    <button type="button">Calculate</button>
-
+    <button type="button" id="calculate">Calculate</button>
+    <div id="customAlert">
+        <div>
+            <span id="customAlertText"></span>
+            <br>
+            <button onclick="document.getElementById('customAlert').style.display='none'">OK</button>
+        </div>
+    </div>
     <div id="calculationResults">
         <h2>Calculation Results:</h2>
         <p>Total Hours: <span id="totalHours"></span></p>
         <p>Total Wage: <span id="totalWage"></span></p>
     </div>   
-    <footer>
-        <p href="#">Created by Leandro Paulino, No Association With United Parcel Service, The Colors Used On This Website Are Copyrighted by United Parcel Service</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
+<footer>
+    <p>Created by Leandro Paulino, No Association With United Parcel Service, The Colors Used On This Website Are Copyrighted by United Parcel Service</p>
+</footer>
 </html>
